@@ -1,0 +1,208 @@
+public class CalendarInfo {
+    
+    public string value {get;set;}
+    
+    public List<Opportunity> appointmentInfo{get;set;}
+    
+    public List<Opportunity> appointmentInfo1{get;set;}
+    public List<Opportunity> appointmentInfo2{get;set;}
+    public List<Opportunity> appointmentInfo3{get;set;}
+    public List<Opportunity> appointmentInfo4{get;set;}
+    public List<Opportunity> appointmentInfo5{get;set;}
+    public List<Opportunity> appointmentInfo6{get;set;}
+    public List<Opportunity> appointmentInfo7{get;set;}
+    
+    public List<Opportunity> appointmentInfo8{get;set;}
+    public List<Opportunity> appointmentInfo9{get;set;}
+    public List<Opportunity> appointmentInfo10{get;set;}
+    public List<Opportunity> appointmentInfo11{get;set;}
+    public List<Opportunity> appointmentInfo12{get;set;}
+    public List<Opportunity> appointmentInfo13{get;set;}
+    public List<Opportunity> appointmentInfo14{get;set;}
+    
+    public List<Opportunity> appointmentInfo15{get;set;}
+    public List<Opportunity> appointmentInfo16{get;set;}
+    public List<Opportunity> appointmentInfo17{get;set;}
+    public List<Opportunity> appointmentInfo18{get;set;}
+    public List<Opportunity> appointmentInfo19{get;set;}
+    public List<Opportunity> appointmentInfo20{get;set;}
+    public List<Opportunity> appointmentInfo21{get;set;}
+    
+    public List<Opportunity> appointmentInfo22{get;set;}
+    public List<Opportunity> appointmentInfo23{get;set;}
+    public List<Opportunity> appointmentInfo24{get;set;}
+    public List<Opportunity> appointmentInfo25{get;set;}
+    public List<Opportunity> appointmentInfo26{get;set;}
+    public List<Opportunity> appointmentInfo27{get;set;}
+    public List<Opportunity> appointmentInfo28{get;set;}
+    
+    public List<Opportunity> appointmentInfo29{get;set;}
+    public List<Opportunity> appointmentInfo30{get;set;}
+    public List<Opportunity> appointmentInfo31{get;set;}
+    
+    
+    public List<Task> taskInfo1{get;set;}
+    public List<Task> taskInfo2{get;set;}
+    public List<Task> taskInfo3{get;set;}
+    public List<Task> taskInfo4{get;set;}
+    public List<Task> taskInfo5{get;set;}
+    public List<Task> taskInfo6{get;set;}
+    public List<Task> taskInfo7{get;set;}
+    
+    public List<Task> taskInfo8{get;set;}
+    public List<Task> taskInfo9{get;set;}
+    public List<Task> taskInfo10{get;set;}
+    public List<Task> taskInfo11{get;set;}
+    public List<Task> taskInfo12{get;set;}
+    public List<Task> taskInfo13{get;set;}
+    public List<Task> taskInfo14{get;set;}
+    
+    public List<Task> taskInfo15{get;set;}
+    public List<Task> taskInfo16{get;set;}
+    public List<Task> taskInfo17{get;set;}
+    public List<Task> taskInfo18{get;set;}
+    public List<Task> taskInfo19{get;set;}
+    public List<Task> taskInfo20{get;set;}
+    public List<Task> taskInfo21{get;set;}
+    
+    public List<Task> taskInfo22{get;set;}
+    public List<Task> taskInfo23{get;set;}
+    public List<Task> taskInfo24{get;set;}
+    public List<Task> taskInfo25{get;set;}
+    public List<Task> taskInfo26{get;set;}
+    public List<Task> taskInfo27{get;set;}
+    public List<Task> taskInfo28{get;set;}
+    
+    public List<Task> taskInfo29{get;set;}
+    public List<Task> taskInfo30{get;set;}
+    public List<Task> taskInfo31{get;set;}
+    
+               
+    public integer tableVal {get;set;}
+    
+    public integer todayMonth {get;set;}
+    public integer todayYear {get;set;}
+    public Date toDayDate {get;set;}
+    
+    public CalendarInfo(ApexPages.StandardController controller){
+        
+        toDayDate = date.today();
+        todayYear = toDayDate.year();
+        todayMonth = toDayDate.month();
+        
+        
+        
+        Date taskDay1 = date.newInstance(todayYear, todayMonth, 1);
+    	Date taskDay2 = date.newInstance(todayYear, todayMonth, 2);
+        Date taskDay3 = date.newInstance(todayYear, todayMonth, 3);
+    	Date taskDay4 = date.newInstance(todayYear, todayMonth, 4);
+    	Date taskDay5 = date.newInstance(todayYear, todayMonth, 5);
+    	Date taskDay6 = date.newInstance(todayYear, todayMonth, 6);
+    	Date taskDay7 = date.newInstance(todayYear, todayMonth, 7);
+        
+        Date taskDay8 = date.newInstance(todayYear, todayMonth, 8);
+    	Date taskDay9 = date.newInstance(todayYear, todayMonth, 9);
+        Date taskDay10 = date.newInstance(todayYear, todayMonth, 10);
+    	Date taskDay11 = date.newInstance(todayYear, todayMonth, 11);
+    	Date taskDay12 = date.newInstance(todayYear, todayMonth, 12);
+    	Date taskDay13 = date.newInstance(todayYear, todayMonth, 13);
+    	Date taskDay14 = date.newInstance(todayYear, todayMonth, 14);
+        
+        Date taskDay15 = date.newInstance(todayYear, todayMonth, 15);
+    	Date taskDay16 = date.newInstance(todayYear, todayMonth, 16);
+        Date taskDay17 = date.newInstance(todayYear, todayMonth, 17);
+    	Date taskDay18 = date.newInstance(todayYear, todayMonth, 18);
+    	Date taskDay19 = date.newInstance(todayYear, todayMonth, 19);
+    	Date taskDay20 = date.newInstance(todayYear, todayMonth, 20);
+    	Date taskDay21 = date.newInstance(todayYear, todayMonth, 21);
+        
+        Date taskDay22 = date.newInstance(todayYear, todayMonth, 22);
+    	Date taskDay23 = date.newInstance(todayYear, todayMonth, 23);
+        Date taskDay24 = date.newInstance(todayYear, todayMonth, 24);
+    	Date taskDay25 = date.newInstance(todayYear, todayMonth, 25);
+    	Date taskDay26 = date.newInstance(todayYear, todayMonth, 26);
+    	Date taskDay27 = date.newInstance(todayYear, todayMonth, 27);
+    	Date taskDay28 = date.newInstance(todayYear, todayMonth, 28);
+        
+        Date taskDay29 = date.newInstance(todayYear, todayMonth, 29);
+    	Date taskDay30 = date.newInstance(todayYear, todayMonth, 30);
+    	Date taskDay31 = date.newInstance(todayYear, todayMonth, 31);
+        
+        tableVal = 1;
+        
+        string userId = UserInfo.getUserId();
+        
+        appointmentInfo1 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 1 AND OwnerId = :userId];
+        appointmentInfo2 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 2 AND OwnerId = :userId];
+        appointmentInfo3 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 3 AND OwnerId = :userId];
+        appointmentInfo4 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 4 AND OwnerId = :userId];
+        appointmentInfo5 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 5 AND OwnerId = :userId];
+        appointmentInfo6 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 6 AND OwnerId = :userId];
+        appointmentInfo7 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 7 AND OwnerId = :userId];
+        
+        appointmentInfo8 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 8 AND OwnerId = :userId];
+        appointmentInfo9 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 9 AND OwnerId = :userId];
+        appointmentInfo10 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 10 AND OwnerId = :userId];
+        appointmentInfo11 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 11 AND OwnerId = :userId];
+        appointmentInfo12 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 12 AND OwnerId = :userId];
+        appointmentInfo13 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 13 AND OwnerId = :userId];
+        appointmentInfo14 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 14 AND OwnerId = :userId];
+        
+        appointmentInfo15 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 15 AND OwnerId = :userId];
+        appointmentInfo16 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 16 AND OwnerId = :userId];
+        appointmentInfo17 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 17 AND OwnerId = :userId];
+        appointmentInfo18 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 18 AND OwnerId = :userId];
+        appointmentInfo19 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 19 AND OwnerId = :userId];
+        appointmentInfo20 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 20 AND OwnerId = :userId];
+        appointmentInfo21 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 21 AND OwnerId = :userId];
+        
+        appointmentInfo22 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 22 AND OwnerId = :userId];
+        appointmentInfo23 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 23 AND OwnerId = :userId];
+        appointmentInfo24 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 24 AND OwnerId = :userId];
+        appointmentInfo25 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 25 AND OwnerId = :userId];
+        appointmentInfo26 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 26 AND OwnerId = :userId];
+        appointmentInfo27 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 27 AND OwnerId = :userId];
+        appointmentInfo28 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 28 AND OwnerId = :userId];
+        
+        appointmentInfo29 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 29 AND OwnerId = :userId];
+        appointmentInfo30 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 30 AND OwnerId = :userId];
+        appointmentInfo31 = [SELECT Name FROM Opportunity WHERE CALENDAR_MONTH(Appointment_Time__c) = :todayMonth AND DAY_IN_MONTH(Appointment_Time__c) = 31 AND OwnerId = :userId];
+                
+        
+        taskInfo1 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay1 AND OwnerId = :userId];
+        taskInfo2 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay2 AND OwnerId = :userId];
+        taskInfo3 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay3 AND OwnerId = :userId];
+        taskInfo4 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay4 AND OwnerId = :userId];
+        taskInfo5 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay5 AND OwnerId = :userId];
+        taskInfo6 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay6 AND OwnerId = :userId];
+        taskInfo7 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay7 AND OwnerId = :userId];
+        
+        taskInfo8 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay8 AND OwnerId = :userId];
+        taskInfo9 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay9 AND OwnerId = :userId];
+        taskInfo10 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay10 AND OwnerId = :userId];
+        taskInfo11 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay11 AND OwnerId = :userId];
+        taskInfo12 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay12 AND OwnerId = :userId];
+        taskInfo13 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay13 AND OwnerId = :userId];
+        taskInfo14 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay14 AND OwnerId = :userId];
+        
+        taskInfo15 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay15 AND OwnerId = :userId];
+        taskInfo16 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay16 AND OwnerId = :userId];
+        taskInfo17 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay17 AND OwnerId = :userId];
+        taskInfo18 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay18 AND OwnerId = :userId];
+        taskInfo19 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay19 AND OwnerId = :userId];
+        taskInfo20 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay20 AND OwnerId = :userId];
+        taskInfo21 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay21 AND OwnerId = :userId];
+        
+        taskInfo22 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay22 AND OwnerId = :userId];
+        taskInfo23 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay23 AND OwnerId = :userId];
+        taskInfo24 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay24 AND OwnerId = :userId];
+        taskInfo25 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay25 AND OwnerId = :userId];
+        taskInfo26 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay26 AND OwnerId = :userId];
+        taskInfo27 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay27 AND OwnerId = :userId];
+        taskInfo28 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay28 AND OwnerId = :userId];
+        
+        taskInfo29 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay29 AND OwnerId = :userId];
+        taskInfo30 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay30 AND OwnerId = :userId];
+        taskInfo31 = [SELECT Subject FROM Task WHERE ActivityDate = :taskDay31 AND OwnerId = :userId];
+    }
+}
